@@ -1,0 +1,15 @@
+Uses supplied fresh_tomatoes module to generate and open a movie listing page.
+Movies are read from a json file which can be supplied as a command line argument, i.e. python entertainment_center.py myMovies.json
+If no infile argument is supplied, defaults to 'demo.json' which has a few movies I've seen recently.
+
+Movies source file must be valid JSON that contains an array (list) of objects (dicts) where each object has a 'title', 'trailer', and 'image' field. Example:
+//movies.json
+[
+  {"title":"Some Film", 
+  "image":"http://website.com/somefilm.jpg",
+  "trailer":"http://youtube.com/sometrailer"}
+]
+
+USAGE:
+  python entertainment_center.py [infile.json]
+
